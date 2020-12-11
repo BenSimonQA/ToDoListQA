@@ -1,0 +1,17 @@
+package com.example.demo.persistence.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.persistence.domain.Task;
+
+@Repository
+public interface TaskRepo extends JpaRepository<Task, Long>{
+
+	
+	@Query(value = "SELECT * FROM TASK WHERE NAME =?1", nativeQuery = true)
+	List<Task> findByName(String name);
+}
