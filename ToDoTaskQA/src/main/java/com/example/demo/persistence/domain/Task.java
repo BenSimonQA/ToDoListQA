@@ -22,19 +22,25 @@ public class Task {
 	@NotNull
 	private String name;
 	
+	@NotNull
+	private String difficulty;
+	
 	@ManyToOne
 	private Todo todo;
 	
-	public Task(Long id, String name)
+	public Task(Long id, String name, String difficulty)
 	{
 		super();
 		this.id = id;
 		this.name = name;
+		this.difficulty = difficulty;
 	}
 	
-	public Task(String name)
+	public Task(String name, String  difficulty)
 	{
 		super();
 		this.name = name;
+		this.difficulty = difficulty;
+
 	}
 }
