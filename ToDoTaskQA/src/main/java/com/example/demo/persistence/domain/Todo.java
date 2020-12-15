@@ -28,20 +28,27 @@ public class Todo {
 	@NotNull
 	private String name;
 	
+	@NotNull
+	private String description;
+	
 	@OneToMany(mappedBy = "todo", fetch = FetchType.EAGER)
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	private List<Task> task;
 	
-	public Todo(Long id, String name)
+	public Todo(Long id, String name, String description, List<Task> task)
 	{
 		super();
 		this.id = id;
 		this.name = name;
+		this.description = description;
+		this.task = task;
 	}
 	
-	public Todo(String name, List<Task> task)
+	public Todo(String name, String description, List<Task> task)
 	{
 		super();
 		this.name = name;
+		this.description = description;
+		this.task = task;
 	}
 }
