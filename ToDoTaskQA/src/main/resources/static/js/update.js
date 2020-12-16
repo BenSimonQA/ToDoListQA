@@ -1,25 +1,27 @@
 document
-    .querySelector("form.createTodo")
+    .querySelector("form.updateTodo")
     .addEventListener("submit", function (stop) {
       stop.preventDefault();
-      let formElements = document.querySelector("form.createTodo").elements;
+      let formElements = document.querySelector("form.updateTodo").elements;
       console.log(formElements)
+      let id=formElements["floatingID"].value;
       let name=formElements["floatingName"].value;
       let description =formElements["floatingDescription"].value;
   
       let data = {
+        "id":id,
         "name":name,
         "description":description
     }
     console.log("Data to post",data)
-    submit(data)
+    submit(data,id)
   
       // postData(noteTitle,noteBody)
     });
 
-    function submit(data){
-    fetch(`http://localhost:8080/todo/create`, {
-        method: "post",
+    function submit(data,id){
+    fetch(`http://localhost:8080/todo/update/${id}/`, {
+        method: "put",
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
@@ -30,5 +32,5 @@ document
       }
 
       )
-      alert(`Added New Todo!`)
+      alert(`Updated Todo ${id}!`)
     }
