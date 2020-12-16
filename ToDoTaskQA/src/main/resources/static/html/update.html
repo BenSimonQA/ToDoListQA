@@ -10,7 +10,12 @@
 
 <body>
 
-    <form method="POST" class="createTodo">
+    <form method="PUT" class="updateTodo">
+        <div class="form-floating">
+            <label for="floatingID">ID</label>
+            <input type="text" class="form-control" id="floatingID" placeholder="ID" style="width: 300px">
+        </div>
+        <br>
         <div class="form-floating">
             <label for="floatingName">Name</label>
             <input type="text" class="form-control" id="floatingName" placeholder="Name" style="width: 300px">
@@ -25,7 +30,7 @@
     </form>
 
 
-    <script src="../js/create.js"></script>
+    <script src="../js/update.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
