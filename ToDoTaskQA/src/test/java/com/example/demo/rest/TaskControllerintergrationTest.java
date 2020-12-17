@@ -33,7 +33,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Sql(scripts = { "classpath:task-schema.sql",
 		"classpath:task-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 @ActiveProfiles(profiles = "dev")
-public class TaskControllerintergrationTest {
+class TaskControllerintergrationTest {
 
 	@Autowired
 	private MockMvc mvc;
@@ -49,13 +49,10 @@ public class TaskControllerintergrationTest {
 	}
 
 	// During our test we want give it some data to use
-	private final Task TEST_task_2 = new Task("Egg","Easy");
-	private final Task TEST_task_3 = new Task("Milk","Medium");
-	private final Task TEST_task_1 = new Task("Flour","Hard");
+
 
 
 	// I also want to create a list of cars that i can use later
-	private final List<Task> LISTOFTASK = List.of(TEST_task_1, TEST_task_2, TEST_task_3);
 
 	private final String URI = "/task";
 

@@ -71,10 +71,5 @@ public class TodoService {
 	
 	public List<TodoDTO> findByName(String name) {
 		return this.repo.findByName(name).stream().map(this::mapToDTO).collect(Collectors.toList());
-		// stream - returns a sequential stream considering collection as its source
-		// map - used to map each element to its corresponding result
-		// :: - for each e.g. Random random = new Random();
-		// random.ints().limit(10).forEach(System.out::println);
-		// Collectors - used to return a list or string
 	}
 }

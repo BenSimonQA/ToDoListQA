@@ -9,5 +9,4 @@ class ToDoTaskQaApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

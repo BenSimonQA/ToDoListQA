@@ -11,6 +11,9 @@ import org.springframework.beans.BeanWrapperImpl;
 
 public class SpringBeanUtil {
 
+	private SpringBeanUtil(){
+		
+	}
 //	Merge not null is used for ensuring that we don’t get an error when we do our update statement. 
 //	We need to create a custom error handler that we can use.
 
