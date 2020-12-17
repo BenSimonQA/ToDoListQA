@@ -29,7 +29,14 @@
       <br>
       <form method="DELETE" class="delete">
         <div class="row">
-          <input type="text" class="form-control" id="floatingDelID" placeholder="Delete by ID" style="width: 300px">
+          <input type="text" class="form-control" id="floatingDelID" placeholder="Delete by ID ToDo" style="width: 300px">
+          <button class="btn btn-danger" type="submit" >Delete</button>
+        </div>
+      </form>
+      <br>
+      <form method="DELETE" class="deleteTask">
+        <div class="row">
+          <input type="text" class="form-control" id="floatingDelID" placeholder="Delete by ID Task" style="width: 300px">
           <button class="btn btn-danger" type="submit" >Delete</button>
         </div>
       </form>
@@ -41,6 +48,9 @@
         <th>ID</th>
         <th>Name</th>
         <th>Description</th>
+        <th>Task</th>
+        <th>Difficulty</th>
+
       </tr>
       <tbody id="mytable">
         

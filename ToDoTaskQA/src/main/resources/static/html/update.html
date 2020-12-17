@@ -9,25 +9,52 @@
 </head>
 
 <body>
+<div class="container">
 
+    <br>
     <form method="PUT" class="updateTodo">
+        <h3>Update To Do</h3>
         <div class="form-floating">
-            <label for="floatingID">ID</label>
+            <label for="floatingID">To Do ID</label>
             <input type="text" class="form-control" id="floatingID" placeholder="ID" style="width: 300px">
         </div>
         <br>
         <div class="form-floating">
-            <label for="floatingName">Name</label>
+            <label for="floatingName">To Do Name</label>
             <input type="text" class="form-control" id="floatingName" placeholder="Name" style="width: 300px">
         </div>
         <br>
         <div class="form-floating">
-            <label for="floatingDescription">Description</label>
+            <label for="floatingDescription">To Do Description</label>
             <input type="text" class="form-control" id="floatingDescription" placeholder="Description" style="width: 300px">
         </div>
         <br>
         <button type="submit" class="btn btn-primary btn-lg" id="submitButton">Submit</button>
     </form>
+        <br>
+        <hr>
+    <form method="PUT" class="updateTask">
+
+            <h3>Update Task</h3>
+            <div class="form-floating">
+                <label for="floatingIDTask">Task ID</label>
+                <input type="text" class="form-control" id="floatingIDTask" placeholder="TaskID" style="width: 300px">
+            </div>
+            <br>
+            <div class="form-floating">
+                <label for="floatingNameTask">Task Name</label>
+                <input type="text" class="form-control" id="floatingNameTask" placeholder="Name" style="width: 300px">
+            </div>
+            <br>
+            <div class="form-floating">
+                <label for="floatingDifficulty">Task Difficulty</label>
+                <input type="text" class="form-control" id="floatingDifficulty" placeholder="Difficulty" style="width: 300px">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg" id="submitButtonT">Submit</button>
+    </form>
+
+</div>
 
 
     <script src="../js/update.js"></script>

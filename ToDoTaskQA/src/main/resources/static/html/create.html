@@ -9,20 +9,44 @@
 </head>
 
 <body>
+<div class="container">
 
+    <br>
     <form method="POST" class="createTodo">
+        <h3>Create To-Do</h3>
         <div class="form-floating">
-            <label for="floatingName">Name</label>
+            <label for="floatingName">To Do Name</label>
             <input type="text" class="form-control" id="floatingName" placeholder="Name" style="width: 300px">
         </div>
         <br>
         <div class="form-floating">
-            <label for="floatingDescription">Description</label>
+            <label for="floatingDescription">To Do Description</label>
             <input type="text" class="form-control" id="floatingDescription" placeholder="Description" style="width: 300px">
         </div>
         <br>
         <button type="submit" class="btn btn-primary btn-lg" id="submitButton">Submit</button>
     </form>
+    <br>
+    <form method="POST" class="createTask">
+        <h3>Create Task</h3>
+        <div class="form-floating">
+            <label for="floatingNameT">Task Name</label>
+            <input type="text" class="form-control" id="floatingNameT" placeholder="Name" style="width: 300px">
+        </div>
+        <br>
+        <div class="form-floating">
+            <label for="floatingDifficulty">Task Difficulty</label>
+            <input type="text" class="form-control" id="floatingDifficulty" placeholder="Difficulty" style="width: 300px">
+        </div>
+        <br>
+        <div class="form-floating">
+            <label for="floatingTodo">Add to Todo</label>
+            <input type="text" class="form-control" id="floatingTodo" placeholder="Todo ID" style="width: 300px">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg" id="submitButtonT">Submit</button>
+    </form>
+</div>
 
 
     <script src="../js/create.js"></script>
