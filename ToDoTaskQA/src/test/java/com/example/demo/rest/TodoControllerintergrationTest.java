@@ -34,7 +34,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Sql(scripts = { "classpath:task-schema.sql",
 		"classpath:task-data.sql" }, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 @ActiveProfiles(profiles = "dev")
-public class TodoControllerintergrationTest {
+class TodoControllerintergrationTest {
 
 	@Autowired
 	private MockMvc mvc;
@@ -51,13 +51,10 @@ public class TodoControllerintergrationTest {
 
 	// During our test we want give it some data to use
 	List<Task> task = new ArrayList<>();
-	private final Todo TEST_todo_1 = new Todo("Egg","Easy", task);
-	private final Todo TEST_todo_2 = new Todo("Milk","Medium", task);
-	private final Todo TEST_todo_3 = new Todo("Flour","Hard", task);
+
 
 
 	// I also want to create a list of cars that i can use later
-	private final List<Todo> LISTOFTODO = List.of(TEST_todo_1, TEST_todo_2, TEST_todo_3);
 
 	private final String URI = "/todo";
 
