@@ -54,7 +54,7 @@ document
       stop.preventDefault();
       let formElements = document.querySelector("form.deleteTask").elements;
       console.log(formElements)
-      let id=formElements["floatingDelID"].value;
+      let id=formElements["floatingDelIDT"].value;
       deleteTaskID(id);
 
     });
