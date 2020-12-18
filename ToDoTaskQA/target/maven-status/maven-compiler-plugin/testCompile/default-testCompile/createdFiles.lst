@@ -1,0 +1,7 @@
+com\example\demo\rest\CoverageTest.class
+com\example\demo\ToDoTaskQaApplicationTests.class
+com\example\demo\rest\TodoControllerUnitTest.class
+com\example\demo\selenium\TodoPageTest.class
+com\example\demo\rest\TaskControllerintergrationTest.class
+com\example\demo\rest\TaskControllerUnitTest.class
+com\example\demo\rest\TodoControllerintergrationTest.class
